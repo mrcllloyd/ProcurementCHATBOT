@@ -6,7 +6,9 @@ import openai
 import streamlit as st
 
 # Load OpenAI API key from Streamlit Secrets
-openai.api_key = st.secrets["openai_api_key"]
+
+from openai import OpenAI
+client = OpenAI(api_key=st.secrets["openai_api_key"])
 
 # Load the sentence transformer model
 model = SentenceTransformer('all-MiniLM-L6-v2')
