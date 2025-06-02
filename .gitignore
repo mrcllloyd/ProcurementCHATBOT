@@ -1,13 +1,20 @@
-# OpenAI API Key (LOCAL ONLY)
+# 🔐 Do NOT upload your OpenAI API key
 .streamlit/secrets.toml
 
-# Byte-compiled / cache files
+# 🧠 Python bytecode and cache
 __pycache__/
 *.py[cod]
 
-# Virtual environments
+# 🐍 Virtual environment folders (if used locally)
 venv/
 .env/
+.envrc
 
-# System files
+# 💻 macOS system file
 .DS_Store
+
+# ⚙️ VS Code settings (optional)
+.vscode/
+
+# 🚫 Log files or temp dumps (optional)
+*.log
