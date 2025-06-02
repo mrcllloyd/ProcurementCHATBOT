@@ -51,7 +51,7 @@ RELEVANT LAW SECTIONS:
 
 ANSWER:
 """
-    response = openai.ChatCompletion.create(
+    response = client.chat.completions.create(
         model="gpt-3.5-turbo",
         messages=[
             {"role": "system", "content": "You are a legal assistant helping users understand RA 12009 and its IRR."},
@@ -59,5 +59,5 @@ ANSWER:
         ],
         temperature=0.3,
         max_tokens=600
-    )
+)
     return response["choices"][0]["message"]["content"]
